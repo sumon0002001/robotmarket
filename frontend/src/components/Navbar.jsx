@@ -30,7 +30,7 @@ const Navbar = () => {
       </ul>
       <div className="buttons">
           <a href="#" className="btn btn-outline-dark">
-              <i></i>Cart(2)</a>
+              <i></i>Cart(0)</a>
       </div>
     </div>
   </div>

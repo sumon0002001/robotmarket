@@ -49,15 +49,16 @@ const Robots = () => {
                return(
                    <>
                 <div className="col-md-3">
-            <div className="card h-100 text-center p-4" key={robot.createdAt} >
+            <div className="card h-100 text-center p-4" key={robot.price} >
                    <img src={robot.image} className="card-img-top photo " alt={robot.name}   
   
-                  height="250px"/>
+                  height="200px"/>
                    <div className="card-body">
                <h5 className="card-title mb-0">{robot.name}</h5>
-               <p className="card-text">${robot.price}</p>
-               <p className="card-text">{robot.stock}</p>
+               <p className="card-text lead fw-bold">฿5{robot.price}</p>
+               <p className="card-text">Total:{robot.stock}</p>
                <p className="card-text">{robot.material}</p>
+               <p className="card-text">Date:{robot.createdAt}</p>
                <button className="btn btn-outline-dark me-2">
                Add to Cart
              </button>
